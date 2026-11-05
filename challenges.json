@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "slug": "001-streampulse",
+    "title": "StreamPulse",
+    "tagline": "100% Local-First Android Watch History Tracker",
+    "status": "completed",
+    "completedDate": "2026-11-04",
+    "category": "mobile",
+    "tags": ["React Native", "Expo CNG", "SQLite", "Drizzle ORM", "Keystore", "TypeScript", "Local-First"],
+    "description": "Unified streaming watch history tracker across Netflix, Amazon Prime Video, and Disney+. Operates 100% on-device with zero proprietary backend or cloud analytics, encrypting session cookies exclusively in Android Keystore.",
+    "highlights": [
+      "100% Local-First: Zero cloud servers, encrypted keystore session isolation",
+      "Hybrid scraping engine with multi-profile and anti-bump accumulation",
+      "Sub-10ms composite indexed SQLite offline search and filtering",
+      "Binge and rewatch grouping with Italian TMDb metadata enrichment"
+    ],
+    "repoUrl": "https://github.com/100chlng-hub/001-streampulse",
+    "demoUrl": "https://github.com/100chlng-hub/001-streampulse/releases",
+    "docsUrl": "https://github.com/100chlng-hub/001-streampulse/blob/main/docs/architecture.md"
+  }
+]

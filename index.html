@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100Challenges | 100 Real-World Software Projects</title>
+  <meta name="description" content="100Challenges: Building and shipping 100 real-world, production-ready software projects before the year ends. By Marco Silvestroni.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    body {
+      background-color: #09090b;
+      color: #fafafa;
+    }
+    .glass-card {
+      background: rgba(24, 24, 27, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(63, 63, 70, 0.4);
+    }
+    .glass-card:hover {
+      border-color: rgba(99, 102, 241, 0.5);
+    }
+    .glow-effect {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="min-h-screen font-sans selection:bg-indigo-500/30 selection:text-indigo-200 antialiased overflow-x-hidden">
+
+  <!-- Ambient Glow Background -->
+  <div class="glow-effect bg-indigo-600/15 -top-24 -left-24"></div>
+  <div class="glow-effect bg-emerald-600/10 top-1/3 -right-32"></div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center font-mono font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+          100
+        </div>
+        <div>
+          <span class="font-bold text-base tracking-tight text-zinc-100 flex items-center gap-1.5">
+            100Challenges
+            <span class="text-[10px] uppercase font-mono font-semibold px-1.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Hub</span>
+          </span>
+          <span class="text-[11px] text-zinc-500 block -mt-0.5">by Marco Silvestroni</span>
+        </div>
+      </a>
+
+      <div class="flex items-center space-x-3">
+        <a href="https://github.com/100chlng-hub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-xs font-medium text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 rounded-lg border border-zinc-800 transition-colors">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub Organization</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-medium mb-6">
+        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Challenge In Progress • 2026 Edition
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
+        100 Real-World Projects <br>
+        <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+          Shipped to Open Source
+        </span>
+      </h1>
+      <p class="text-base sm:text-lg text-zinc-400 leading-relaxed">
+        An ambitious engineering challenge committing to design, build, and publish <strong>100 fully functional, production-ready software projects</strong> before the year ends. Covering mobile local-first apps, AI systems, dev tools, and scalable architectures.
+      </p>
+    </div>
+
+    <!-- Live Metrics Dashboard -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <!-- Target Metric -->
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between text-zinc-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider font-mono">Total Target</span>
+          <i data-lucide="target" class="w-4 h-4 text-indigo-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-white font-mono">100</div>
+        <div class="text-xs text-zinc-500 mt-1">Autonomous Projects</div>
+      </div>
+
+      <!-- Completed Metric -->
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between text-zinc-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider font-mono">Completed</span>
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-emerald-400 font-mono" id="stat-completed">1</div>
+        <div class="text-xs text-zinc-500 mt-1">Challenge #001 live</div>
+      </div>
+
+      <!-- In Progress / Remaining -->
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between text-zinc-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider font-mono">In Queue</span>
+          <i data-lucide="layers" class="w-4 h-4 text-amber-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-amber-400 font-mono" id="stat-remaining">99</div>
+        <div class="text-xs text-zinc-500 mt-1">Upcoming milestones</div>
+      </div>
+
+      <!-- Countdown Metric -->
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between text-zinc-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider font-mono">Year Countdown</span>
+          <i data-lucide="clock" class="w-4 h-4 text-purple-400"></i>
+        </div>
+        <div class="text-2xl font-extrabold text-purple-300 font-mono" id="stat-countdown">--d --h</div>
+        <div class="text-xs text-zinc-500 mt-1">Until Dec 31, 2026</div>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="glass-card rounded-2xl p-6 mb-12">
+      <div class="flex items-center justify-between mb-3 text-sm">
+        <span class="font-medium text-zinc-200 flex items-center gap-2">
+          <i data-lucide="flame" class="w-4 h-4 text-indigo-400"></i>
+          Overall Challenge Progress
+        </span>
+        <span class="font-mono font-bold text-indigo-300" id="progress-pct">1% Complete (1/100)</span>
+      </div>
+      <div class="w-full bg-zinc-800/80 rounded-full h-3.5 p-0.5 overflow-hidden">
+        <div id="progress-bar-fill" class="bg-gradient-to-r from-indigo-500 to-emerald-400 h-full rounded-full transition-all duration-700 ease-out" style="width: 1%"></div>
+      </div>
+    </div>
+
+    <!-- Filters & Search Controls -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+      <!-- Search Input -->
+      <div class="relative flex-1 max-w-md">
+        <i data-lucide="search" class="w-4 h-4 text-zinc-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search by project name, tech stack, or keywords..." 
+          class="w-full bg-zinc-900/90 border border-zinc-800 rounded-xl pl-10 pr-4 py-2 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-indigo-500 transition-colors"
+        >
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center gap-1.5 overflow-x-auto pb-2 md:pb-0 scrollbar-none" id="category-pills">
+        <button data-cat="all" class="category-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-colors">
+          All
+        </button>
+        <button data-cat="mobile" class="category-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:bg-zinc-800 transition-colors">
+          Mobile
+        </button>
+        <button data-cat="local-first" class="category-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:bg-zinc-800 transition-colors">
+          Local-First
+        </button>
+        <button data-cat="ai" class="category-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:bg-zinc-800 transition-colors">
+          AI & LLM
+        </button>
+        <button data-cat="systems" class="category-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:bg-zinc-800 transition-colors">
+          Systems & CLI
+        </button>
+        <button data-cat="web" class="category-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:bg-zinc-800 transition-colors">
+          Web
+        </button>
+      </div>
+    </div>
+
+    <!-- Challenges Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="challenges-grid">
+      <!-- Challenge cards injected dynamically via app.js -->
+    </div>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="glass-card bg-zinc-900 border border-zinc-700/80 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+      <button id="modal-close-btn" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-1 rounded-lg bg-zinc-800/60 hover:bg-zinc-800 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800/80 bg-zinc-950 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-zinc-500">
+      <div class="flex items-center justify-center space-x-4 mb-4">
+        <a href="https://github.com/100chlng-hub" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-300 transition-colors">GitHub Organization</a>
+        <span>•</span>
+        <a href="https://github.com/100chlng-hub/001-streampulse" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-300 transition-colors">Challenge #001: StreamPulse</a>
+        <span>•</span>
+        <a href="https://github.com/marcosilvestroni" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-300 transition-colors">Marco Silvestroni</a>
+      </div>
+      <p class="text-xs text-zinc-600">
+        © 2026 100Challenges Initiative. Built local-first and published under MIT license.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
