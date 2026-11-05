@@ -18,5 +18,25 @@
     "repoUrl": "https://github.com/100chlng-hub/001-streampulse",
     "demoUrl": "https://github.com/100chlng-hub/001-streampulse/releases",
     "docsUrl": "https://github.com/100chlng-hub/001-streampulse/blob/main/docs/architecture.md"
+  },
+  {
+    "id": 2,
+    "slug": "002-summarize-commits",
+    "title": "Git Contribution Graph & Tech Stack Analyzer",
+    "tagline": "Static cross-repository contribution heatmaps and automated tech stack fingerprinting",
+    "status": "completed",
+    "completedDate": "2026-11-05",
+    "category": "web",
+    "tags": ["React 19", "TypeScript", "Vite", "Python", "Git Analytics", "Static SPA", "Heatmap"],
+    "description": "Interactive developer analytics tool that consolidates multi-repository Git history and technology stacks into a unified GitHub-style heatmap dashboard, with zero backend dependency on GitHub Pages.",
+    "highlights": [
+      "100% Static GitHub Pages deployment with build-time CSV/JSON aggregation",
+      "Interactive multi-year GitHub-style heatmap with tooltip project inspection",
+      "Automated tech stack detection engine with SVG bubble chart visualization",
+      "Deterministic local date rendering fixing cross-timezone shifts"
+    ],
+    "repoUrl": "https://github.com/100chlng-hub/002-summarize-commits",
+    "demoUrl": "https://100chlng-hub.github.io/002-summarize-commits",
+    "docsUrl": "https://github.com/100chlng-hub/002-summarize-commits#readme"
   }
 ]
