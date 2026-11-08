@@ -7,7 +7,15 @@
     "status": "completed",
     "completedDate": "2026-11-04",
     "category": "mobile",
-    "tags": ["React Native", "Expo CNG", "SQLite", "Drizzle ORM", "Keystore", "TypeScript", "Local-First"],
+    "tags": [
+      "React Native",
+      "Expo CNG",
+      "SQLite",
+      "Drizzle ORM",
+      "Keystore",
+      "TypeScript",
+      "Local-First"
+    ],
     "description": "Unified streaming watch history tracker across Netflix, Amazon Prime Video, and Disney+. Operates 100% on-device with zero proprietary backend or cloud analytics, encrypting session cookies exclusively in Android Keystore.",
     "highlights": [
       "100% Local-First: Zero cloud servers, encrypted keystore session isolation",
@@ -27,7 +35,15 @@
     "status": "completed",
     "completedDate": "2026-11-05",
     "category": "web",
-    "tags": ["React 19", "TypeScript", "Vite", "Python", "Git Analytics", "Static SPA", "Heatmap"],
+    "tags": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Python",
+      "Git Analytics",
+      "Static SPA",
+      "Heatmap"
+    ],
     "description": "Interactive developer analytics tool that consolidates multi-repository Git history and technology stacks into a unified GitHub-style heatmap dashboard, with zero backend dependency on GitHub Pages.",
     "highlights": [
       "100% Static GitHub Pages deployment with build-time CSV/JSON aggregation",
@@ -38,5 +54,32 @@
     "repoUrl": "https://github.com/100chlng-hub/002-summarize-commits",
     "demoUrl": "https://100chlng-hub.github.io/002-summarize-commits",
     "docsUrl": "https://github.com/100chlng-hub/002-summarize-commits#readme"
+  },
+  {
+    "id": 3,
+    "slug": "003-caller-noted",
+    "title": "Caller-Noted",
+    "tagline": "Smart post-call calendar scheduling assistant with Gemini Flash AI",
+    "status": "completed",
+    "completedDate": "2026-11-09",
+    "category": "mobile",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "Gemini AI",
+      "Android",
+      "Telephony",
+      "Calendar"
+    ],
+    "description": "Smart post-call calendar scheduling assistant with Gemini Flash AI",
+    "highlights": [
+      "Automatic post-call telephony hook and duration filtering",
+      "GDPR-compliant 5-second voice memo scheduling",
+      "Gemini Flash structured JSON date/time parsing",
+      "Direct native device calendar and contacts synchronization"
+    ],
+    "repoUrl": "https://github.com/100chlng-hub/003-caller-noted",
+    "demoUrl": "https://github.com/100chlng-hub/003-caller-noted/releases",
+    "docsUrl": "https://github.com/100chlng-hub/003-caller-noted#readme"
   }
 ]
